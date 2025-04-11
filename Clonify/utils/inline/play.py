@@ -67,14 +67,7 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-         [
-             InlineKeyboardButton(text="σᴡηєʀ", url="https://t.me/PURVI_SUPPORT"),
-             InlineKeyboardButton(text="๏ ᴧᴅᴅ ϻє ๏", url=f"https://t.me/{app.username}?startgroup=true"),
-             InlineKeyboardButton(text="ѕᴜᴘᴘσʀᴛ", url="https://t.me/+gMy8Cp190ediNzZl")
-         ],
-        [
-            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
-        ]
+         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
 
@@ -88,16 +81,10 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
          ],
-        [
-             InlineKeyboardButton(text="σᴡηєʀ", url="https://t.me/PURVI_SUPPORT"),
-             InlineKeyboardButton(text="๏ ᴧᴅᴅ ϻє ๏", url=f"https://t.me/{app.username}?startgroup=true"),
-             InlineKeyboardButton(text="ѕᴜᴘᴘσʀᴛ", url="https://t.me/+gMy8Cp190ediNzZl")
-         ],
-        [
-            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
-        ]
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
-    return buttons   
+    return buttons
+
 
 def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
     buttons = [
@@ -242,10 +229,10 @@ def stream_markup2(_, chat_id):
         ],
 [
             InlineKeyboardButton(
-                text="ᴏᴡɴᴇʀ", url=f"https://t.me/ZeoXpro"
+                text="ᴏᴡɴᴇʀ", url=f"https://t.me/iamakki001"
             ),
             InlineKeyboardButton(
-                text="ᴄʜᴀᴛ", url=f"https://t.me/ProBotGc"
+                text="ᴄʜᴀᴛ", url=f"https://t.me/oldskoolgc"
             ),
         ],
 
@@ -450,7 +437,7 @@ def panel_markup_3(_, videoid, chat_id):
     ]
     return buttons
 
-# Zeo
+
 def panel_markup_4(_, vidid, chat_id, played, dur):
     played_sec = time_to_seconds(played)
     duration_sec = time_to_seconds(dur)
@@ -514,8 +501,15 @@ def panel_markup_4(_, vidid, chat_id, played, dur):
 def panel_markup_clone(_, vidid, chat_id):
     buttons = [
         [
+            InlineKeyboardButton(
+                text=_["S_B_3"],
+                url=f"https://t.me/{app.username}?startgroup=true",
+            ),
+        ],
+        [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
@@ -523,4 +517,4 @@ def panel_markup_clone(_, vidid, chat_id):
     ]
 
     return buttons
-
+        
