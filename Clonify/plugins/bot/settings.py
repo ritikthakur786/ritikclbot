@@ -94,7 +94,7 @@ async def settings_back_markup(client, CallbackQuery: CallbackQuery, _):
 async def gib_repo(client, CallbackQuery, _):
     await CallbackQuery.edit_message_media(
         media=InputMediaVideo(
-            media="https://files.catbox.moe/goltet.mp4",
+            media="https://files.catbox.moe/lkqhtd.mp4",
             has_spoiler=True,
             caption="**ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ᴍᴜsɪᴄ ʙᴏᴛ ᴡᴀᴛᴄʜɪɴɢ ᴛʜᴇ ᴠɪᴅᴇᴏ ᴄᴀʀᴇғᴜʟʟʏ.**"
         ),
